@@ -1,0 +1,14 @@
+@use '@/styles/vars';
+@use '@/components/MovieItem/vars' as movieItemVars;
+
+.skeletonContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: vars.$basic-spacing;
+    margin-top: 60px;
+
+    .skeletonRow {
+        display: flex;
+        grid-gap: vars.$basic-spacing;
+    }
+}

@@ -1,0 +1,23 @@
+@use '@/styles/vars';
+
+.movieData {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        margin-top: 0;
+        font-weight: bold;
+        font-size: vars.$font-size-biggest;
+    }
+
+    .releaseDate {
+        margin-top: 0;
+        font-size: vars.$font-size-bigger;
+        font-weight: bold;
+    }
+
+    .overview {
+        margin-top: 0;
+        font-size: vars.$font-size-big;
+    }
+}

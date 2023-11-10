@@ -1,0 +1,28 @@
+@use '@/styles/vars';
+
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    gap: vars.$basic-spacing;
+
+    background-color: vars.$white-main;
+    width: 900px;
+    max-width: 95%;
+    height: 60px;
+    padding: vars.$basic-spacing;
+    box-sizing: border-box;
+
+    .searchButton {
+        color: vars.$color-primary;
+    }
+
+    .searchInput {
+        flex-grow: 1;
+        font-size: vars.$font-size-standard;
+        height: 30px;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}

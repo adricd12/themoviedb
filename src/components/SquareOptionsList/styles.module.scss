@@ -1,0 +1,25 @@
+@use '@/styles/vars';
+
+.itemsContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.item {
+    cursor: pointer;
+    border: solid 1px vars.$black-main;
+    color: vars.$color-primary;
+    font-weight: vars.$font-weight-bolder;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: vars.$grey-hover;
+    }
+    &.selected {
+        border: solid 1px vars.$color-primary;
+        border-bottom: solid 3px vars.$color-primary;
+    }
+}

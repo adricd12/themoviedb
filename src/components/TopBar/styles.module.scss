@@ -1,0 +1,12 @@
+@use '@/styles/vars';
+
+.topBarContainer {
+    display: flex;
+    align-items: center;
+    gap: vars.$basic-spacing;
+    height: 60px;
+
+    .topBarButton {
+        color: vars.$color-primary;
+    }
+}

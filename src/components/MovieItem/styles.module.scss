@@ -1,0 +1,61 @@
+@use 'vars';
+@use '@/styles/vars' as global;
+
+.movieItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &.interactive {
+        .moviePicture {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &:not(.interactive) {
+        a {
+            cursor: default;
+        }
+    }
+}
+
+.moviePicture {
+    position: relative;
+
+    &.small {
+        width: vars.$small-movie-item;
+        height: 300px;
+    }
+
+    &.medium {
+        width: vars.$medium-movie-item;
+        height: 350px;
+    }
+
+    &.large {
+        width: vars.$large-movie-item;
+        height: 450px;
+    }
+
+    &.xLarge {
+        width: vars.$xLarge-movie-item;
+        height: 600px;
+    }
+}
+
+.movieTitle {
+    font-weight: global.$font-weight-bolder;
+    &.small {
+        max-width: vars.$small-movie-item;;
+    }
+
+    &.medium {
+        max-width: vars.$medium-movie-item;
+    }
+
+    &.large {
+        max-width: vars.$large-movie-item;
+    }
+}

@@ -1,0 +1,57 @@
+@use '@/styles/vars';
+@use '@/components/MovieItem/vars' as movieItemVars;
+
+.moviesListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1064px;
+
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .sizes {
+            display: flex;
+            gap: 5px;
+        }
+    }
+
+    .movies {
+        display: grid;
+        justify-content: space-between;
+        grid-gap: vars.$basic-spacing;
+        width: 100%;
+
+        &.small {
+            grid-template-columns: repeat(auto-fill, movieItemVars.$small-movie-item);
+        }
+    
+        &.medium {
+            grid-template-columns: repeat(auto-fill, movieItemVars.$medium-movie-item);
+        }
+    
+        &.large {
+            grid-template-columns: repeat(auto-fill, movieItemVars.$large-movie-item);
+        }
+    }
+}
+
+.sizeOption {
+    cursor: pointer;
+    border: solid 1px vars.$black-main;
+    color: vars.$color-primary;
+    font-weight: vars.$font-weight-bolder;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: vars.$grey-hover;
+    }
+}

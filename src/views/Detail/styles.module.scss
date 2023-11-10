@@ -1,0 +1,16 @@
+@use '@/styles/vars';
+
+.mainDetailContainer {
+    display: flex;
+    flex-direction: column;
+
+    .title h1 {
+        width: fit-content;
+        margin-top: 0;
+    }
+    
+    .details {
+        display: flex;
+        gap: vars.$basic-spacing;
+    }
+}

@@ -1,0 +1,7 @@
+@use '@/styles/vars';
+@use '@/components/MovieItem/vars' as movieItemVars;
+
+.skeletonContainer {
+    display: flex;
+    grid-gap: vars.$basic-spacing;
+}

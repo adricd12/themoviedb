@@ -1,0 +1,15 @@
+@use 'vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+body {
+  background-color: vars.$grey-light;
+  font-family: 'Roboto', sans-serif;
+  font-weight: vars.$font-weight-standard;
+  margin: 0 60px;
+}
+
+h1 {
+  color: vars.$black-main;
+  border-bottom: solid 5px vars.$color-primary;
+}
